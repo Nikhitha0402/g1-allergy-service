@@ -8,7 +8,7 @@ pipeline{
 
 					steps{
 
-						git branch: "main", url: 'https://github.com/sriramaleti9238/g1-allergy-service.git'
+						git branch: "main", url: 'https://github.com/Nikhitha0402/g1-allergy-service.git'
 
 						}
 
@@ -40,7 +40,7 @@ pipeline{
 
 						steps {
 
-							sh 'docker build -t sriramaleti9238/allergy-service:latest .'
+							sh 'docker build -t nikhitha0402/allergy-service:latest .'
 
 							}
 
@@ -50,7 +50,7 @@ pipeline{
 
 					steps {
 
-						sh 'echo As@13042000 | docker login -u sriramaleti9238 --password-stdin'
+						sh 'echo Nikhitha@9531 | docker login -u nikhitha0402  --password-stdin'
 
 						}
 
@@ -60,7 +60,7 @@ pipeline{
 
 					steps {
 
-						sh 'docker push sriramaleti9238/allergy-service'
+						sh 'docker push nikhitha0402/allergy-service'
 
 						}
 	
